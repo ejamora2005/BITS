@@ -135,6 +135,55 @@ if (articleCards.length > 0) {
 
 const projectModal = document.querySelector('[data-project-modal]');
 const projectInfoButtons = [...document.querySelectorAll('[data-project-info]')];
+const instructorModal = document.querySelector('[data-instructor-modal]');
+const instructorInfoButtons = [...document.querySelectorAll('[data-instructor-info]')];
+const pageModals = [...document.querySelectorAll('[data-project-modal], [data-instructor-modal]')];
+
+const updateModalBodyState = () => {
+    document.body.classList.toggle(
+        'has-project-modal',
+        pageModals.some((modal) => modal.classList.contains('is-open')),
+    );
+};
+
+const closeModal = (modal) => {
+    if (!modal) return;
+
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    updateModalBodyState();
+};
+
+const openModal = (modal) => {
+    if (!modal) return;
+
+    pageModals.forEach((item) => {
+        if (item !== modal) closeModal(item);
+    });
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    updateModalBodyState();
+
+    const closeButton = modal.querySelector('.project-modal-close');
+    window.setTimeout(() => closeButton?.focus(), 80);
+};
+
+pageModals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+        if (event.target.matches('[data-project-modal-close], [data-instructor-modal-close]')) {
+            closeModal(modal);
+        }
+    });
+});
+
+window.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+
+    pageModals.forEach((modal) => {
+        if (modal.classList.contains('is-open')) closeModal(modal);
+    });
+});
 
 if (projectModal && projectInfoButtons.length > 0) {
     const modalLogo = projectModal.querySelector('[data-project-modal-logo]');
@@ -144,16 +193,10 @@ if (projectModal && projectInfoButtons.length > 0) {
     const modalDeveloper = projectModal.querySelector('[data-project-modal-developer]');
     const modalDescription = projectModal.querySelector('[data-project-modal-description]');
     const modalLink = projectModal.querySelector('[data-project-modal-link]');
-    const closeButtons = [...projectModal.querySelectorAll('[data-project-modal-close]')];
-
-    const setModalOpen = (isOpen) => {
-        projectModal.classList.toggle('is-open', isOpen);
-        projectModal.setAttribute('aria-hidden', String(!isOpen));
-        document.body.classList.toggle('has-project-modal', isOpen);
-    };
 
     projectInfoButtons.forEach((button) => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
             const { title, status, meta, developer, description, logo, url } = button.dataset;
 
             if (modalLogo) {
@@ -171,23 +214,10 @@ if (projectModal && projectInfoButtons.length > 0) {
                 modalLink.href = url || '#';
             }
 
-            setModalOpen(true);
+            openModal(projectModal);
         });
     });
-
-    closeButtons.forEach((button) => {
-        button.addEventListener('click', () => setModalOpen(false));
-    });
-
-    window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && projectModal.classList.contains('is-open')) {
-            setModalOpen(false);
-        }
-    });
 }
-
-const instructorModal = document.querySelector('[data-instructor-modal]');
-const instructorInfoButtons = [...document.querySelectorAll('[data-instructor-info]')];
 
 if (instructorModal && instructorInfoButtons.length > 0) {
     const modalImage = instructorModal.querySelector('[data-instructor-modal-image]');
@@ -195,16 +225,11 @@ if (instructorModal && instructorInfoButtons.length > 0) {
     const modalRole = instructorModal.querySelector('[data-instructor-modal-role]');
     const modalEducation = instructorModal.querySelector('[data-instructor-modal-education]');
     const modalExpertise = instructorModal.querySelector('[data-instructor-modal-expertise]');
-    const closeButtons = [...instructorModal.querySelectorAll('[data-instructor-modal-close]')];
-
-    const setModalOpen = (isOpen) => {
-        instructorModal.classList.toggle('is-open', isOpen);
-        instructorModal.setAttribute('aria-hidden', String(!isOpen));
-        document.body.classList.toggle('has-project-modal', isOpen);
-    };
 
     instructorInfoButtons.forEach((button) => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
             const { name, role, education, expertise, image } = button.dataset;
 
             if (modalImage) {
@@ -217,18 +242,8 @@ if (instructorModal && instructorInfoButtons.length > 0) {
             if (modalEducation) modalEducation.textContent = education || '';
             if (modalExpertise) modalExpertise.textContent = expertise || '';
 
-            setModalOpen(true);
+            openModal(instructorModal);
         });
-    });
-
-    closeButtons.forEach((button) => {
-        button.addEventListener('click', () => setModalOpen(false));
-    });
-
-    window.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape' && instructorModal.classList.contains('is-open')) {
-            setModalOpen(false);
-        }
     });
 }
 
