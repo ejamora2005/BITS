@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 720" role="img" aria-labelledby="title">
+  <title id="title">Instructor cutout placeholder two</title>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M262 88c66 0 119 53 119 119s-53 119-119 119-119-53-119-119S196 88 262 88Z" fill="#eaf6ff"/>
+    <path d="M128 609c-20 0-35-19-30-39l39-152c13-52 60-88 114-88h22c54 0 101 36 114 88l39 152c5 20-10 39-30 39H128Z" fill="#052f66"/>
+    <path d="M170 560l24-92c8-32 37-54 70-54s62 22 70 54l24 92H170Z" fill="#7ed8ff"/>
+    <path d="M199 206c0-48 34-88 76-88s76 40 76 88-34 88-76 88-76-40-76-88Z" fill="#ffffff"/>
+    <path d="M172 201c3-76 61-115 121-103 47 9 79 46 83 97-27-15-55-21-85-18-38 4-77 19-119 24Z" fill="#063b78"/>
+    <path d="M232 248c18 23 49 31 78 18" stroke="#bfd8f2" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

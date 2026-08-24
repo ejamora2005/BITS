@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">BITS building image placeholder</title>
+  <desc id="desc">A blue technology themed building image placeholder for the BITS homepage.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8efff"/>
+      <stop offset="1" stop-color="#7ed8ff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0a6fca"/>
+      <stop offset="1" stop-color="#041f44"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <path d="M0 560c160-66 307-88 440-66 120 20 204 80 336 75 117-4 201-59 424-48v239H0V560Z" fill="#eaf6ff" opacity=".78"/>
+  <path d="M176 270h244v330H176V270Zm300-110h420v440H476V160Zm476 190h142v250H952V350Z" fill="url(#glass)"/>
+  <path d="M230 318h54v54h-54v-54Zm92 0h54v54h-54v-54Zm0 98h54v54h-54v-54Zm-92 98h54v54h-54v-54Zm330-284h64v64h-64v-64Zm102 0h64v64h-64v-64Zm102 0h64v64h-64v-64Zm-204 110h64v64h-64v-64Zm102 0h64v64h-64v-64Zm102 0h64v64h-64v-64Zm-204 110h64v64h-64v-64Zm102 0h64v64h-64v-64Zm102 0h64v64h-64v-64Zm224-38h42v52h-42v-52Zm68 0h42v52h-42v-52Zm-68 88h42v52h-42v-52Zm68 0h42v52h-42v-52Z" fill="#d8efff" opacity=".88"/>
+  <path d="M126 600h1000v52H126z" fill="#063b78"/>
+  <text x="600" y="704" fill="#063b78" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">BITS BUILDING IMAGE</text>
+</svg>
