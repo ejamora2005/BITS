@@ -139,6 +139,12 @@ const instructorModal = document.querySelector('[data-instructor-modal]');
 const instructorInfoButtons = [...document.querySelectorAll('[data-instructor-info]')];
 const pageModals = [...document.querySelectorAll('[data-project-modal], [data-instructor-modal]')];
 
+pageModals.forEach((modal) => {
+    if (modal.parentElement !== document.body) {
+        document.body.append(modal);
+    }
+});
+
 const updateModalBodyState = () => {
     document.body.classList.toggle(
         'has-project-modal',
