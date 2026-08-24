@@ -1273,13 +1273,13 @@
 
     #instructors {
         min-height: auto;
-        padding-bottom: 0;
+        padding-bottom: 2rem;
         scroll-margin-top: 120px;
     }
 
     #officers {
-        margin-top: clamp(-22rem, -30vh, -14rem);
-        padding-top: 3rem;
+        margin-top: 0;
+        padding-top: 4rem;
     }
 
     .instructor-heading-brand {
@@ -3234,8 +3234,8 @@
     }
 
     #officers {
-        margin-top: -8rem;
-        padding-top: 2.5rem;
+        margin-top: 0;
+        padding-top: 4rem;
     }
 
     .section-heading.with-actions {
