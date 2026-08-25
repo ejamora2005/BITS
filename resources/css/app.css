@@ -1576,8 +1576,8 @@
         position: absolute;
         bottom: 62px;
         z-index: 2;
-        width: min(24vw, 180px);
-        height: 250px;
+        width: min(20vw, 150px);
+        height: 215px;
         padding: 0;
         cursor: pointer;
         background: transparent;
@@ -1608,7 +1608,7 @@
     }
 
     .side-instructor-left:hover {
-        transform: translateX(-4%) translateY(-10px) scale(.92) rotate(-4deg);
+        transform: translateX(-4%) translateY(-8px) scale(.9) rotate(-4deg);
     }
 
     .side-instructor-right {
@@ -1618,7 +1618,7 @@
     }
 
     .side-instructor-right:hover {
-        transform: translateX(4%) translateY(-10px) scale(.92) rotate(4deg);
+        transform: translateX(4%) translateY(-8px) scale(.9) rotate(4deg);
     }
 
     .instructor-caption {
@@ -3428,8 +3428,8 @@
 
     .side-instructor {
         bottom: 70px;
-        width: min(28vw, 112px);
-        height: 170px;
+        width: min(24vw, 96px);
+        height: 145px;
     }
 
     .side-instructor-left {
