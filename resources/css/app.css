@@ -1971,11 +1971,11 @@
 
     .officer-card-image {
         position: absolute;
-        top: -38px;
+        top: -44px;
         left: 50%;
         z-index: 2;
-        width: min(190px, 88%);
-        height: 126px;
+        width: min(205px, 90%);
+        height: 138px;
         background-image: var(--officer-image);
         background-position: center top;
         background-repeat: no-repeat;
@@ -1991,7 +1991,7 @@
     }
 
     .officer-card:has(.officer-card-image) {
-        padding-top: 5.65rem;
+        padding-top: 6.25rem;
         text-align: center;
     }
 

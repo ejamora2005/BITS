@@ -381,12 +381,15 @@
                 </div>
                 <div class="officer-grid">
                     @foreach ([
-                        ['President', 'Analou Oclarit'],
-                        ['Vice President', 'Danica Marie Cabahug'],
-                        ['Secretary/Treasurer', 'Kristin Agad Andam'],
-                        ['Graphic Designer', 'John Brunz Camarista'],
-                    ] as [$role, $name])
+                        ['President', 'Analou Oclarit', null],
+                        ['Vice President', 'Danica Marie Cabahug', 'officers/cabahug.png'],
+                        ['Secretary/Treasurer', 'Kristin Agad Andam', null],
+                        ['Graphic Designer', 'John Brunz Camarista', null],
+                    ] as [$role, $name, $image])
                         <article class="officer-card" data-reveal>
+                            @if ($image)
+                                <span class="officer-card-image" style="--officer-image: url('{{ asset('images/'.$image) }}')" aria-hidden="true"></span>
+                            @endif
                             <h3>{{ $role }}</h3>
                             <p>{{ $name }}</p>
                         </article>
@@ -412,11 +415,11 @@
                 </div>
                 <div class="officer-grid tech-team-grid">
                     @foreach ([
-                        ['TT', 'Ahnjellou Gesulga', null],
+                        ['TT', 'Ahnjellou Gesulga', 'officers/Gesulga.jpg'],
                         ['TT', 'Emil Jon Amora', 'officers/amora.png'],
-                        ['TT', 'John Mark Yecyec', 'officers/yecyec.jpg'],
-                        ['TT', 'Nino Inal', null],
-                        ['TT', 'Wyn Medina', null],
+                        ['TT', 'John Mark Yecyec', 'officers/yecyec.webp'],
+                        ['TT', 'Nino Inal', 'officers/inal.png'],
+                        ['TT', 'Wyn Medina', 'officers/Medina.jpg'],
                     ] as [$initials, $name, $image])
                         <article class="officer-card" data-reveal>
                             @if ($image)
