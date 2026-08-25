@@ -528,9 +528,9 @@
             </div>
             <div class="event-stack" data-reveal>
                 @foreach ([
-                    ['General Assembly', 'Orientation, goals, committees, and student registration.'],
-                    ['Code Sprint', 'A collaborative build day for campus tools and student portfolios.'],
-                    ['Tech Talk Series', 'Invited speakers, alumni sharing, and practical skill sessions.'],
+                    ['Organization Assembly', 'Student orientation, attendance checking, officer announcements, and committee assignments.'],
+                    ['SIS and LMS Assistance', 'Guidance for student portal access, LMS concerns, online enrolment, and account-related questions.'],
+                    ['Project and Capstone Consultation', 'Instructor-guided support for system planning, documentation, interface design, and project presentation.'],
                 ] as [$title, $copy])
                     <article>
                         <span>{{ sprintf('%02d', $loop->iteration) }}</span>
