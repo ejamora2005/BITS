@@ -58,7 +58,7 @@
                 <div class="relative z-10" data-reveal>
                     <p class="eyebrow">Bontoc Information Technology Society</p>
                     <h1>Empowering SLSU Bontoc IT students to learn, lead, and build together.</h1>
-                    <p class="hero-copy">BITS is the school organization home for technology students of Southern Leyte State University - Bontoc Campus, bringing announcements, membership, instructors, officers, projects, and campus activities into one polished space.</p>
+                    <p class="hero-copy">BITS is the school organization home for technology students of Southern Leyte State University - Bontoc Campus, bringing announcements, student participation, instructors, officers, projects, and campus activities into one polished space.</p>
                     <div class="mt-8 flex flex-wrap gap-3">
                         <a href="{{ route('articles') }}" class="primary-button">Articles</a>
                         <a href="#projects" class="secondary-button">Projects</a>
@@ -105,12 +105,12 @@
                 <div class="command-desk">
                     <article class="desk-card desk-card-large" data-reveal>
                         <div class="desk-header">
-                            <span>Member Notices</span>
+                            <span>Student Notices</span>
                             <strong>Now</strong>
                         </div>
                         <div class="feed-list">
                             @foreach ([
-                                ['Organization Assembly', 'BITS organization assembly on August 26 at 2:00 PM. Attendance, committees, and member orientation details will be discussed.', 'Important'],
+                                ['Organization Assembly', 'BITS organization assembly on August 26 at 2:00 PM. Attendance, committees, and student orientation details will be discussed.', 'Important'],
                             ] as [$title, $copy, $status])
                                 <div class="feed-item">
                                     <span>{{ $status }}</span>
@@ -148,7 +148,7 @@
                     @foreach ([
                         ['Build Labs', 'Student teams work on BITS Connect, Wayfinder, campus tools, and academic outputs.'],
                         ['Skill Sessions', 'Workshops and practice sessions for programming, UI design, databases, and documentation.'],
-                        ['Member Support', 'Peer guidance, instructor support, and committee work for active BITS students.'],
+                        ['Student Support', 'Peer guidance, instructor support, and committee work for active BITS students.'],
                         ['Community Tech', 'Technology service, publication work, and digital support for campus activities.'],
                     ] as [$title, $copy])
                         <article class="matrix-card" data-reveal>
@@ -432,7 +432,7 @@
 
         <section id="membership" class="content-section mx-auto max-w-7xl px-5 md:px-8">
             <div class="section-heading" data-reveal>
-                <p class="section-kicker">Membership Path</p>
+                <p class="section-kicker">Student Path</p>
                 <h2>How students join, participate, and contribute to BITS committees.</h2>
             </div>
             <div class="membership-suite">
@@ -501,13 +501,13 @@
         <section id="features" class="content-section mx-auto max-w-7xl px-5 md:px-8">
             <div class="section-heading" data-reveal>
                 <p class="section-kicker">Website Features</p>
-                <h2>Website areas that support BITS announcements, projects, events, and members.</h2>
+                <h2>Website areas that support BITS announcements, projects, events, and students.</h2>
             </div>
             <div class="feature-lab">
                 @foreach ([
                     ['Announcements', 'Official updates, urgent notices, meeting reminders, and campus activity posts.'],
                     ['Project Gallery', 'BITS systems, academic projects, and student team outputs.'],
-                    ['Membership Records', 'Member information, committee assignments, and participation records.'],
+                    ['Student Records', 'Student information, committee assignments, and participation records.'],
                     ['Resource Vault', 'Workshop files, guides, templates, references, and shared learning links.'],
                     ['Event Tracker', 'Upcoming activities, completed events, reports, and attendance highlights.'],
                     ['Campus Linkages', 'College, campus, alumni, and community collaboration updates.'],
@@ -524,11 +524,11 @@
         <section id="events" class="content-section mx-auto grid max-w-7xl gap-8 px-5 md:px-8 lg:grid-cols-[.9fr_1.1fr]">
             <div data-reveal>
                 <p class="section-kicker">Events</p>
-                <h2>BITS activities for members, officers, instructors, and student project teams.</h2>
+                <h2>BITS activities for students, officers, instructors, and student project teams.</h2>
             </div>
             <div class="event-stack" data-reveal>
                 @foreach ([
-                    ['General Assembly', 'Orientation, goals, committees, and membership registration.'],
+                    ['General Assembly', 'Orientation, goals, committees, and student registration.'],
                     ['Code Sprint', 'A collaborative build day for campus tools and student portfolios.'],
                     ['Tech Talk Series', 'Invited speakers, alumni sharing, and practical skill sessions.'],
                 ] as [$title, $copy])
@@ -605,7 +605,7 @@
                             <img src="{{ asset('images/bitsbot.png') }}" alt="">
                         </span>
                         <div class="chat-bubble">
-                            <p>Hello! I am BITSBot. I can answer organization-related questions about BITS, SLSU Bontoc Campus activities, membership, officers, instructors, events, project teams, resources, and technology programs.</p>
+                        <p>Hello! I am BITSBot. I can answer organization-related questions about BITS, SLSU Bontoc Campus activities, student participation, officers, instructors, events, project teams, resources, and technology programs.</p>
                         </div>
                     </div>
                 </div>
@@ -613,7 +613,7 @@
                 <div class="chatbot-prompts">
                     <button type="button" data-chat-prompt="Who are the developers of this website?">Developer</button>
                     <button type="button" data-chat-prompt="What are the BITS committees?">Committees</button>
-                    <button type="button" data-chat-prompt="What projects can members build?">Projects</button>
+                    <button type="button" data-chat-prompt="What projects can students build?">Projects</button>
                 </div>
 
                 <form class="chatbot-form" data-chatbot-form>
