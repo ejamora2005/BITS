@@ -13,13 +13,13 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 0;
+        scroll-padding-top: 92px;
     }
 
     body {
         font-family: var(--font-sans);
         background: #eaf5ff;
-        scroll-snap-type: y proximity;
+        scroll-snap-type: none;
     }
 }
 
@@ -1321,7 +1321,7 @@
     #instructors {
         min-height: auto;
         padding-bottom: 2rem;
-        scroll-margin-top: 120px;
+        scroll-margin-top: 0;
     }
 
     #officers {
@@ -3181,6 +3181,10 @@
 }
 
 @media (max-width: 767px) {
+    html {
+        scroll-padding-top: 62px;
+    }
+
     .site-frame {
         padding-top: 62px;
     }
