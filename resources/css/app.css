@@ -3335,8 +3335,12 @@
 
     .content-section,
     .content-band {
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
         padding-bottom: 4rem;
+    }
+
+    #instructors {
+        padding-top: 1rem;
     }
 
     #officers {
@@ -3359,7 +3363,7 @@
     }
 
     .instructor-carousel {
-        min-height: 780px;
+        min-height: 640px;
     }
 
     .instructor-slide {
@@ -3370,16 +3374,16 @@
     .portrait-shell,
     .instructor-visual,
     .instructor-stage {
-        min-height: 400px;
+        min-height: 330px;
     }
 
     .instructor-focus-slide {
-        min-height: 720px;
+        min-height: 600px;
     }
 
     .focus-instructor-image {
         width: min(78vw, 280px);
-        height: 300px;
+        height: 270px;
         max-height: calc(100% - 80px);
     }
 
