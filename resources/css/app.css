@@ -2178,10 +2178,10 @@
     .chatbot-panel {
         position: absolute;
         right: 0;
-        bottom: 124px;
+        bottom: 104px;
         display: flex;
         width: min(92vw, 430px);
-        height: min(68vh, 570px);
+        height: min(58vh, 500px);
         overflow: visible;
         flex-direction: column;
         background:
@@ -3445,7 +3445,7 @@
     }
 
     .chatbot-widget {
-        right: .85rem;
+        right: 1.2rem;
         bottom: .85rem;
     }
 
@@ -3461,11 +3461,11 @@
 
     .chatbot-panel {
         position: absolute;
-        right: .75rem;
+        right: 0;
         bottom: 92px;
         left: auto;
-        width: min(360px, calc(100vw - 1.5rem));
-        height: min(66dvh, 500px);
+        width: min(330px, calc(100vw - 2.4rem));
+        height: min(58dvh, 455px);
         max-height: calc(100dvh - 118px);
         transform-origin: bottom right;
     }
