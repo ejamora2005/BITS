@@ -1602,7 +1602,7 @@
     }
 
     .side-instructor-left {
-        left: 9%;
+        left: 20%;
         transform: translateX(-8%) scale(.86) rotate(-7deg);
         animation: sideInstructorLeftFloat 6.7s ease-in-out infinite;
     }
@@ -1612,7 +1612,7 @@
     }
 
     .side-instructor-right {
-        right: 9%;
+        right: 20%;
         transform: translateX(8%) scale(.86) rotate(7deg);
         animation: sideInstructorRightFloat 7s ease-in-out infinite;
     }
@@ -3433,11 +3433,11 @@
     }
 
     .side-instructor-left {
-        left: 0;
+        left: 8%;
     }
 
     .side-instructor-right {
-        right: 0;
+        right: 8%;
     }
 
     .event-stack article {
