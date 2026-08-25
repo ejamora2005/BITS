@@ -1228,6 +1228,12 @@
         border-radius: 8px;
     }
 
+    .vault-panel article a {
+        display: block;
+        height: 100%;
+        color: inherit;
+    }
+
     .vault-panel strong,
     .vault-panel span {
         display: block;
@@ -2070,6 +2076,25 @@
         display: flex;
         flex-wrap: wrap;
         gap: .6rem;
+    }
+
+    .contact-quicklinks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .contact-quicklinks a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: .55rem .75rem;
+        color: #d8efff;
+        font-size: .78rem;
+        font-weight: 900;
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(216, 239, 255, .24);
+        border-radius: 8px;
     }
 
     .social-link {

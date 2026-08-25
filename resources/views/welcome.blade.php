@@ -483,28 +483,28 @@
             <div class="mx-auto max-w-7xl px-5 md:px-8">
                 <div class="section-heading" data-reveal>
                     <p class="section-kicker">Resource Vault</p>
-                <h2>Guides, templates, and references used for BITS activities and documentation.</h2>
+                    <h2>SLSU student portals, manuals, and official online resources.</h2>
                 </div>
                 <div class="vault-shell" data-reveal>
                     <div class="vault-tabs" role="tablist" aria-label="Resource categories">
-                        <button class="is-active" type="button" data-vault-tab="guides">Guides</button>
-                        <button type="button" data-vault-tab="templates">Templates</button>
-                        <button type="button" data-vault-tab="links">Links</button>
+                        <button class="is-active" type="button" data-vault-tab="portals">Portals</button>
+                        <button type="button" data-vault-tab="manuals">Manuals</button>
+                        <button type="button" data-vault-tab="campus">Campus Links</button>
                     </div>
-                    <div class="vault-panel is-active" data-vault-panel="guides">
-                        <article><strong>Workshop Starter</strong><span>Slides, references, and facilitator notes</span></article>
-                        <article><strong>Officer Handbook</strong><span>Roles, reporting flow, and meeting rhythm</span></article>
-                        <article><strong>Project Guide</strong><span>Team tasks, documentation, and review checklist</span></article>
+                    <div class="vault-panel is-active" data-vault-panel="portals">
+                        <article><a href="https://sis.southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer"><strong>SLSU SIS</strong><span>Student Information System for grades, enrolment, balances, clearance, and records</span></a></article>
+                        <article><a href="https://lms.southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer"><strong>SLSU LMS</strong><span>Learning Management System for online classes, activities, and course materials</span></a></article>
+                        <article><a href="https://my.southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer"><strong>Online Admission</strong><span>SLSU admission portal for applicants and student requirements</span></a></article>
                     </div>
-                    <div class="vault-panel" data-vault-panel="templates">
-                        <article><strong>Event Proposal</strong><span>Budget, objectives, timeline, and approval format</span></article>
-                        <article><strong>Certificate List</strong><span>Participant lists and printing details</span></article>
-                        <article><strong>Publication Brief</strong><span>Caption, creative direction, and posting checklist</span></article>
+                    <div class="vault-panel" data-vault-panel="manuals">
+                        <article><a href="https://sis.southernleytestateu.edu.ph/download/student-manual" target="_blank" rel="noopener noreferrer"><strong>Student Manual</strong><span>Official SLSU student manual and university guidelines</span></a></article>
+                        <article><a href="https://sis.southernleytestateu.edu.ph/tutorials" target="_blank" rel="noopener noreferrer"><strong>SIS Tutorials</strong><span>Guides for enrolment, clearance, account access, and student portal use</span></a></article>
+                        <article><a href="https://sis.southernleytestateu.edu.ph/announcements" target="_blank" rel="noopener noreferrer"><strong>SIS Announcements</strong><span>Portal notices and student system updates</span></a></article>
                     </div>
-                    <div class="vault-panel" data-vault-panel="links">
-                        <article><strong>Learning Library</strong><span>Curated web, UI, coding, and productivity links</span></article>
-                        <article><strong>Submission Desk</strong><span>Project files, event outputs, and publication materials</span></article>
-                        <article><strong>Feedback Channel</strong><span>Member suggestions and post-event reflections</span></article>
+                    <div class="vault-panel" data-vault-panel="campus">
+                        <article><a href="https://southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer"><strong>SLSU Website</strong><span>Official Southern Leyte State University website</span></a></article>
+                        <article><a href="https://www.facebook.com/southernleytestateu" target="_blank" rel="noopener noreferrer"><strong>SLSU Facebook</strong><span>Official university announcements and public updates</span></a></article>
+                        <article><a href="https://www.facebook.com/slsubitsofficial" target="_blank" rel="noopener noreferrer"><strong>BITS Facebook</strong><span>Official BITS page for organization posts and student updates</span></a></article>
                     </div>
                 </div>
             </div>
@@ -563,6 +563,11 @@
                 </div>
                 <div class="social-panel" data-reveal>
                     <a href="mailto:bits@slsu.edu.ph" class="primary-button">Contact BITS</a>
+                    <div class="contact-quicklinks" aria-label="SLSU student links">
+                        <a href="https://sis.southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer">SIS</a>
+                        <a href="https://lms.southernleytestateu.edu.ph/" target="_blank" rel="noopener noreferrer">LMS</a>
+                        <a href="https://sis.southernleytestateu.edu.ph/download/student-manual" target="_blank" rel="noopener noreferrer">Student Manual</a>
+                    </div>
                     <div class="social-actions" aria-label="BITS official social links">
                         <a href="https://youtube.com/@slsubitsofficial?si=01gFrPt7FmpB63xO" class="social-link social-link-youtube" target="_blank" rel="noopener noreferrer" aria-label="BITS YouTube">
                             <svg viewBox="0 0 24 24" aria-hidden="true">
