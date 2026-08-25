@@ -36,11 +36,19 @@
     }
 
     .nav-shell {
-        position: relative;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 80;
         border-bottom: 1px solid rgba(255, 255, 255, .7);
         background: rgba(248, 252, 255, .74);
         box-shadow: 0 18px 42px rgba(7, 26, 51, .08);
         backdrop-filter: blur(22px);
+    }
+
+    .site-frame {
+        padding-top: 91px;
     }
 
     .brand-mark {
@@ -3173,6 +3181,10 @@
 }
 
 @media (max-width: 767px) {
+    .site-frame {
+        padding-top: 76px;
+    }
+
     .nav-shell nav {
         padding-top: .7rem;
         padding-bottom: .7rem;
