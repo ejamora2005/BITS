@@ -110,9 +110,7 @@
                         </div>
                         <div class="feed-list">
                             @foreach ([
-                                ['General Assembly', 'Attendance, committees, and member orientation details.', 'Important'],
-                                ['Student Systems', 'BITS Connect and Wayfinder updates for students and visitors.', 'Active'],
-                                ['Workshop Preparation', 'References, speaker details, and activity materials.', 'Next'],
+                                ['Organization Assembly', 'BITS organization assembly on August 26 at 2:00 PM. Attendance, committees, and member orientation details will be discussed.', 'Important'],
                             ] as [$title, $copy, $status])
                                 <div class="feed-item">
                                     <span>{{ $status }}</span>
@@ -122,17 +120,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                        </div>
-                    </article>
-                    <article class="desk-card" data-reveal>
-                        <div class="desk-header">
-                            <span>Today</span>
-                            <strong>03</strong>
-                        </div>
-                        <div class="agenda-list">
-                            <p><span>08:00</span> Officer check-in</p>
-                            <p><span>13:00</span> Instructor consultation</p>
-                            <p><span>16:00</span> Publication review</p>
                         </div>
                     </article>
                     <article class="desk-card" data-reveal>
