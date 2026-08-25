@@ -2147,7 +2147,7 @@
         position: fixed;
         right: 1.25rem;
         bottom: 1.25rem;
-        z-index: 70;
+        z-index: 120;
     }
 
     .chatbot-toggle {
@@ -2178,10 +2178,10 @@
     .chatbot-panel {
         position: absolute;
         right: 0;
-        bottom: 104px;
+        bottom: 124px;
         display: flex;
         width: min(92vw, 430px);
-        height: min(58vh, 500px);
+        height: min(68vh, 570px);
         overflow: visible;
         flex-direction: column;
         background:
