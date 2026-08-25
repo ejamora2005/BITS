@@ -26,6 +26,11 @@
                         <strong>Bontoc Information Technology Society</strong>
                     </span>
                 </a>
+                <button type="button" class="mobile-menu-toggle" data-mobile-menu-toggle aria-expanded="false" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="hidden items-center gap-5 text-sm font-bold md:flex">
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="{{ route('articles') }}">Articles</a>
@@ -36,6 +41,15 @@
                     <a class="nav-cta" href="#contact">Contact</a>
                 </div>
             </nav>
+            <div class="mobile-menu-panel" data-mobile-menu>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="{{ route('articles') }}">Articles</a>
+                <a class="nav-link" href="#desk">Updates</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#instructors">Instructors</a>
+                <a class="nav-link" href="#officers">Officers</a>
+                <a class="nav-cta" href="#contact">Contact</a>
+            </div>
         </header>
 
         <section class="hero-system" style="--hero-building-image: url('{{ asset('images/'.$buildingImage) }}')">

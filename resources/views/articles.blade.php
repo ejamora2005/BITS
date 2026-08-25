@@ -95,6 +95,11 @@
                         <strong>Bontoc Information Technology Society</strong>
                     </span>
                 </a>
+                <button type="button" class="mobile-menu-toggle" data-mobile-menu-toggle aria-expanded="false" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div class="hidden items-center gap-5 text-sm font-bold md:flex">
                     <a class="nav-link" href="{{ url('/#about') }}">About</a>
                     <a class="nav-link is-active" href="{{ route('articles') }}" aria-current="page">Articles</a>
@@ -105,6 +110,15 @@
                     <a class="nav-cta" href="{{ url('/#contact') }}">Contact</a>
                 </div>
             </nav>
+            <div class="mobile-menu-panel" data-mobile-menu>
+                <a class="nav-link" href="{{ url('/#about') }}">About</a>
+                <a class="nav-link is-active" href="{{ route('articles') }}" aria-current="page">Articles</a>
+                <a class="nav-link" href="{{ url('/#desk') }}">Updates</a>
+                <a class="nav-link" href="{{ url('/#projects') }}">Projects</a>
+                <a class="nav-link" href="{{ url('/#instructors') }}">Instructors</a>
+                <a class="nav-link" href="{{ url('/#officers') }}">Officers</a>
+                <a class="nav-cta" href="{{ url('/#contact') }}">Contact</a>
+            </div>
         </header>
 
         <section class="articles-hero mx-auto grid max-w-7xl gap-8 px-5 py-14 md:px-8 lg:grid-cols-[.92fr_1.08fr] lg:items-center">

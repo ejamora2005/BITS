@@ -18,6 +18,34 @@ if (revealElements.length > 0) {
     revealElements.forEach((element) => observer.observe(element));
 }
 
+const mobileMenuToggle = document.querySelector('[data-mobile-menu-toggle]');
+const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+if (mobileMenuToggle && mobileMenu) {
+    const setMobileMenuOpen = (isOpen) => {
+        mobileMenuToggle.classList.toggle('is-open', isOpen);
+        mobileMenu.classList.toggle('is-open', isOpen);
+        mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+        mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    };
+
+    mobileMenuToggle.addEventListener('click', () => {
+        setMobileMenuOpen(!mobileMenu.classList.contains('is-open'));
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => setMobileMenuOpen(false));
+    });
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setMobileMenuOpen(false);
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) setMobileMenuOpen(false);
+    });
+}
+
 const instructorCarousel = document.querySelector('[data-instructor-carousel]');
 
 if (instructorCarousel) {
