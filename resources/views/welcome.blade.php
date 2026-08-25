@@ -16,7 +16,7 @@
     @endphp
 
     <main class="site-frame min-h-screen overflow-hidden">
-        <header class="nav-shell sticky top-0 z-50">
+        <header class="nav-shell">
             <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
                 <a href="{{ url('/') }}" class="brand-mark">
                     <span class="brand-icon">
