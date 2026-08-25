@@ -3460,23 +3460,28 @@
     }
 
     .chatbot-panel {
-        position: fixed;
-        top: 78px;
+        position: absolute;
         right: .75rem;
-        bottom: .75rem;
-        left: .75rem;
-        width: auto;
-        height: auto;
-        max-height: calc(100dvh - 90px);
+        bottom: 92px;
+        left: auto;
+        width: min(360px, calc(100vw - 1.5rem));
+        height: min(66dvh, 500px);
+        max-height: calc(100dvh - 118px);
         transform-origin: bottom right;
     }
 
     .chatbot-panel::after {
-        display: none;
+        display: block;
+        right: 34px;
+        bottom: -18px;
+        height: 18px;
     }
 
     .chatbot-panel::before {
-        display: none;
+        display: block;
+        right: 31px;
+        bottom: -21px;
+        height: 21px;
     }
 
     .chatbot-header {
