@@ -3178,6 +3178,10 @@
         padding-bottom: .7rem;
     }
 
+    .nav-shell .brand-copy {
+        display: none;
+    }
+
     .mobile-menu-toggle {
         display: grid;
     }
