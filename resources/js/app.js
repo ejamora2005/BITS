@@ -361,6 +361,7 @@ if (chatbot) {
     const cleanBotReply = (reply) => String(reply)
         .replace(/\\\*/g, '')
         .replace(/\*\*(.*?)\*\*/g, '$1')
+        .replace(/[*_`#>[\]]/g, '')
         .replace(/^\s*[-*]\s+/gm, '')
         .trim();
 

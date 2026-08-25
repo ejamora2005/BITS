@@ -22,12 +22,20 @@ Route::post('/bits-chatbot', function (Request $request) {
 
     $apiKey = config('services.gemini.key');
     $model = config('services.gemini.model', 'gemini-3.5-flash');
+    $bitsOnlyReply = 'I can only answer BITS organization-related questions. You can ask me about students, officers, instructors, articles, recent updates, events, projects, resources, committees, technology programs, SLSU student links, or the website developers.';
     $developerReply = implode("\n", [
         'Tech Team ni Pilato created this BITS website as a student academic project for the organization.',
         '',
         'We are BSIT Major in Programming students from SLSU Bontoc Campus. Our 4th year developers are Emil Jon Amora, Ahnjellou Gesulga, and John Mark Yecyec, while our 3rd year developers are Wyndel Medina, Rogelniño Mondido Fe Inal, Jericho Kuizon, and Kevin Lozada.',
     ]);
     $normalizedMessage = Str::lower($validated['message']);
+    $allowedTopics = ['bits', 'bontoc information technology society', 'slsu', 'southern leyte state university', 'bontoc campus', 'bsit', 'information technology', 'student', 'students', 'officer', 'officers', 'instructor', 'instructors', 'committee', 'committees', 'announcement', 'announcements', 'article', 'articles', 'update', 'updates', 'event', 'events', 'project', 'projects', 'capstone', 'resource', 'resources', 'sis', 'lms', 'student manual', 'developer', 'developers', 'programmer', 'programmers', 'website', 'membership', 'organization', 'assembly', 'wayfinder', 'bits connect'];
+
+    if (! Str::contains($normalizedMessage, $allowedTopics)) {
+        return response()->json([
+            'reply' => $bitsOnlyReply,
+        ]);
+    }
 
     if (Str::contains($normalizedMessage, ['developer', 'developed', 'creator', 'created', 'made', 'programmer'])) {
         return response()->json([
@@ -122,9 +130,12 @@ Route::post('/bits-chatbot', function (Request $request) {
         }
 
         $reply = data_get($response->json(), 'candidates.0.content.parts.0.text');
+        $plainReply = filled($reply)
+            ? trim(preg_replace('/[*_`#>\[\]]+/', '', $reply))
+            : null;
 
         return response()->json([
-            'reply' => filled($reply) ? $reply : 'Gemini responded, but no text answer was returned.',
+            'reply' => filled($plainReply) ? $plainReply : 'Gemini responded, but no text answer was returned.',
         ]);
     } catch (Throwable $exception) {
         Log::error('Gemini chatbot exception', [
