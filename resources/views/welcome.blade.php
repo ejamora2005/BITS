@@ -66,7 +66,7 @@
                     <div class="signal-row">
                         <div>
                             <strong>211</strong>
-                            <span>Enrolled students</span>
+                            <span>Students</span>
                         </div>
                     </div>
                 </div>
