@@ -415,11 +415,11 @@
                 </div>
                 <div class="officer-grid tech-team-grid">
                     @foreach ([
-                        ['TT', 'Ahnjellou Gesulga', 'officers/Gesulga.jpg'],
+                        ['TT', 'Ahnjellou Gesulga', 'officers/Gesulga-removebg-preview.png'],
                         ['TT', 'Emil Jon Amora', 'officers/amora.png'],
                         ['TT', 'John Mark Yecyec', 'officers/yecyec.webp'],
                         ['TT', 'Nino Inal', 'officers/inal.png'],
-                        ['TT', 'Wyn Medina', 'officers/Medina.jpg'],
+                        ['TT', 'Wyn Medina', 'officers/Medina-removebg-preview.png'],
                     ] as [$initials, $name, $image])
                         <article class="officer-card" data-reveal>
                             @if ($image)
