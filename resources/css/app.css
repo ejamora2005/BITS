@@ -3182,12 +3182,12 @@
 
 @media (max-width: 767px) {
     .site-frame {
-        padding-top: 76px;
+        padding-top: 62px;
     }
 
     .nav-shell nav {
-        padding-top: .7rem;
-        padding-bottom: .7rem;
+        padding-top: .45rem;
+        padding-bottom: .45rem;
     }
 
     .nav-shell .brand-copy {
@@ -3241,13 +3241,13 @@
     }
 
     .brand-icon {
-        width: 52px;
-        height: 52px;
+        width: 44px;
+        height: 44px;
     }
 
     .brand-icon img {
-        width: 50px;
-        height: 50px;
+        width: 42px;
+        height: 42px;
     }
 
     .brand-mark strong {
@@ -3258,7 +3258,7 @@
     }
 
     .hero-grid {
-        padding-top: 3.25rem;
+        padding-top: 2rem;
     }
 
     .hero-system h1 {
@@ -3331,7 +3331,7 @@
 
     .content-section,
     .content-band {
-        padding-top: 4rem;
+        padding-top: 2.5rem;
         padding-bottom: 4rem;
     }
 
