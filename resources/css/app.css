@@ -279,8 +279,8 @@
 
     .signal-row {
         display: grid;
-        max-width: 500px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: min(100%, 220px);
+        grid-template-columns: 1fr;
         gap: .85rem;
         margin-top: 1.9rem;
     }
@@ -329,7 +329,7 @@
     }
 
     .signal-row div {
-        padding: 1rem;
+        padding: .85rem 1rem;
         background: linear-gradient(145deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, .06));
         border: 1px solid rgba(255, 255, 255, .2);
         border-radius: 8px;
