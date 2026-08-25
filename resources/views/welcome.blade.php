@@ -425,7 +425,7 @@
                             @if ($image)
                                 <span class="officer-card-image" style="--officer-image: url('{{ asset('images/'.$image) }}')" aria-hidden="true"></span>
                             @endif
-                            <h3>Tech Team</h3>
+                            <h3>Technical Support Team</h3>
                             <p>{{ $name }}</p>
                         </article>
                     @endforeach
